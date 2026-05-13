@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Là-Maja Coffee & Eatery — Cicalengka Bandung</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav" class="not-s">
+  <a href="#" class="nlogo">
+    <div class="nlogo-img"><img src="data:image/jpeg;base64,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nzEXGAoOOFI2kZpTxOIdOFTle+qS1a7Wadr/AHabq5MqtTkjKz3/AK/r8TvJZYoYHmmkSONFLM7sFVQOpJPQVDZahYalbfaNOvbe7hzt8y3kWRc+mQetYF94fvL34bW2hxbLe4gjtwEMu9WMTKdpfachtnUqevIPSotM8O376drbXzz2t5qVv9m8x7pZ2ACMqudkaAEbz6kgDkcCt3ia3tIxUNGr/PXS/wB2/fyNXVnzJKOljoLXWNJvpmhstUsrmRSVKQzq7AjqMA9eDWNqEfhT4ieHte8I6nHDqWnyB9Pv7TzseYhAzyjbgOcZ4OQfSq1jo2ryeI9GvbrRtK06LTYJbcm2m3s4ZAo2DaNqZXoeefbm5Bo9+JPEdiyxQW+ou8sF5FJ86mSJUIKYGCpUnOeeKmGIrys+XS76NX92/XbXS7/UmNSo7O39W/DXQ8Xtf2ZvAt58HdX+Duh/EbXH8I3Wox6hNp0dxbXM9oyuGMaS7cqjOqkhgTkHB5bPp3ww8C/Dn4TeCJPB/gc2ttaWrtc3jSXSyzPIeGlnfOc/KBzgALgAAVa8MeG9TsdWtLjVI2T7BbG2hdLtHRgdoIVFiQhPlBwx4OOO9bWj6KlrodzYXtvbuLm5unlVQCJElldsNxySrAGqoV69WKbjbfe/lb8/w89HTnUkk2rbmt50P2gQebH5pXeI9w3Fc4zj0yRzT8H0Nch4Fs52s59VvJ1uWOLC0nH8drAzIjc93O5j68VsyeHNMl1Q6g5v/OMgk+W/nVMj/YD7ce2MVpRr1KtKNSMVr3fT7mXTqSnBSS3Naiiius2CiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAEVVRAiKFUDACjAApaKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP/9k=" alt="Logo Là-Maja"></div>
+    <span class="nlogo-t">Là-<i>Maja</i></span>
+  </a>
+  <ul class="nlinks">
+    <li><a href="#about">Tentang</a></li>
+    <li><a href="#feat">Unggulan</a></li>
+    <li><a href="#menu">Menu</a></li>
+    <li><a href="#gal">Galeri</a></li>
+    <li><a href="#rev">Review</a></li>
+    <li><a href="https://wa.me/6282324730862?text=Halo%20La-Maja%2C%20saya%20ingin%20reservasi" target="_blank" class="ncta">Reservasi</a></li>
+  </ul>
+  <div class="hbg" id="hbg" onclick="toggleNav()"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mob" id="mob">
+  <a href="#about" onclick="closeMob()">Tentang</a>
+  <a href="#feat" onclick="closeMob()">Unggulan</a>
+  <a href="#menu" onclick="closeMob()">Menu</a>
+  <a href="#gal" onclick="closeMob()">Galeri</a>
+  <a href="#rev" onclick="closeMob()">Review</a>
+  <a href="https://wa.me/6282324730862?text=Halo%20La-Maja%2C%20saya%20ingin%20reservasi" target="_blank" class="mob-cta" onclick="closeMob()">WhatsApp Reservasi</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hbg-wrap">
+    <img src="bg lamaja.jpeg" id="heroImg" alt="Hero">
+  </div>
+  <div class="hero-inner">
+    <div class="h-chip">Cicalengka · Bandung Timur</div>
+    <div class="h-logo-circle"><img src="data:image/jpeg;base64,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nzEXGAoOOFI2kZpTxOIdOFTle+qS1a7Wadr/AHabq5MqtTkjKz3/AK/r8TvJZYoYHmmkSONFLM7sFVQOpJPQVDZahYalbfaNOvbe7hzt8y3kWRc+mQetYF94fvL34bW2hxbLe4gjtwEMu9WMTKdpfachtnUqevIPSotM8O376drbXzz2t5qVv9m8x7pZ2ACMqudkaAEbz6kgDkcCt3ia3tIxUNGr/PXS/wB2/fyNXVnzJKOljoLXWNJvpmhstUsrmRSVKQzq7AjqMA9eDWNqEfhT4ieHte8I6nHDqWnyB9Pv7TzseYhAzyjbgOcZ4OQfSq1jo2ryeI9GvbrRtK06LTYJbcm2m3s4ZAo2DaNqZXoeefbm5Bo9+JPEdiyxQW+ou8sF5FJ86mSJUIKYGCpUnOeeKmGIrys+XS76NX92/XbXS7/UmNSo7O39W/DXQ8Xtf2ZvAt58HdX+Duh/EbXH8I3Wox6hNp0dxbXM9oyuGMaS7cqjOqkhgTkHB5bPp3ww8C/Dn4TeCJPB/gc2ttaWrtc3jSXSyzPIeGlnfOc/KBzgALgAAVa8MeG9TsdWtLjVI2T7BbG2hdLtHRgdoIVFiQhPlBwx4OOO9bWj6KlrodzYXtvbuLm5unlVQCJElldsNxySrAGqoV69WKbjbfe/lb8/w89HTnUkk2rbmt50P2gQebH5pXeI9w3Fc4zj0yRzT8H0Nch4Fs52s59VvJ1uWOLC0nH8drAzIjc93O5j68VsyeHNMl1Q6g5v/OMgk+W/nVMj/YD7ce2MVpRr1KtKNSMVr3fT7mXTqSnBSS3Naiiius2CiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAEVVRAiKFUDACjAApaKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP/9k=" alt="Là-Maja Logo"></div>
+    <h1 class="h-title">Titik Jumpa<em>Kita di Sini</em></h1>
+    <p class="h-script">Là-Maja Coffee & Eatery</p>
+    <p class="h-desc">Kopi artisan, suasana industrial yang hangat, dan ruang untuk setiap momen istimewamu — dari brunch santai hingga perayaan yang tak terlupakan.</p>
+    <div class="h-btns">
+      <a href="https://wa.me/6282324730862?text=Halo%20La-Maja%2C%20saya%20ingin%20reservasi" target="_blank" class="btn-p">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Reservasi Sekarang
+      </a>
+      <a href="#menu" class="btn-o">Lihat Menu ↓</a>
+    </div>
+  </div>
+  <div class="h-nums">
+    <div class="h-n"><div class="h-n-v">4.7</div><div class="h-n-l">Google Rating</div></div>
+    <div class="h-n"><div class="h-n-v">100+</div><div class="h-n-l">Menu Pilihan</div></div>
+    <div class="h-n"><div class="h-n-v">8</div><div class="h-n-l">Paket Event</div></div>
+  </div>
+  <div class="scroll-cue"><span>Scroll</span><div class="scroll-bar"></div></div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="tick-inner">
+    <s>Artisan Coffee</s><i>✦</i><s>Western & Nusantara</s><i>✦</i>
+    <s>Intimate Wedding</s><i>✦</i><s>Romantic Dinner</s><i>✦</i>
+    <s>Birthday Package</s><i>✦</i><s>Bridal Shower</s><i>✦</i>
+    <s>Pre Wedding Photoshoot</s><i>✦</i><s>Meeting Room</s><i>✦</i>
+    <s>Parkir Luas</s><i>✦</i><s>Dimsum 20K</s><i>✦</i>
+    <s>Artisan Coffee</s><i>✦</i><s>Western & Nusantara</s><i>✦</i>
+    <s>Intimate Wedding</s><i>✦</i><s>Romantic Dinner</s><i>✦</i>
+    <s>Birthday Package</s><i>✦</i><s>Bridal Shower</s><i>✦</i>
+    <s>Pre Wedding Photoshoot</s><i>✦</i><s>Meeting Room</s><i>✦</i>
+    <s>Parkir Luas</s><i>✦</i><s>Dimsum 20K</s><i>✦</i>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="a-glow"></div>
+  <div class="a-imgs rvl">
+    <img class="a-main" src="sampul lamaja.jpeg" alt="Interior Là-Maja">
+    <div class="a-stat"><span class="a-stat-n">4.7</span><span class="a-stat-l">Google ★</span></div>
+  </div>
+  <div class="rvr">
+    <div class="sec-eye lt">Tentang Kami</div>
+    <h2 class="sec-title lt">Di Sini Tempat<em>Kita Berjumpa</em></h2>
+    <p class="a-body">Là-Maja Coffee & Eatery menghadirkan perpaduan elegan antara nuansa teracotta yang hangat dan desain industrial yang raw. Lebih dari sekadar kafe — ini ruang untuk setiap momen yang bermakna.</p>
+    <p class="a-body">Dari kopi artisan biji lokal pilihan, hidangan Western dan Nusantara, hingga ruang eksklusif untuk pernikahan intim, meeting, dan perayaan spesialmu.</p>
+    <div class="tags">
+      <span class="tag">Industrial & Raw</span><span class="tag">Artisan Coffee</span>
+      <span class="tag">Live Music</span><span class="tag">Kids Friendly</span>
+      <span class="tag">Mushola</span><span class="tag">Parkir Luas</span><span class="tag">Free WiFi</span>
+    </div>
+    <div class="open-row"><div class="odot"></div>
+      <span>Buka setiap hari · <strong style="color:rgba(254,250,245,.85)">09.00 – 22.00 WIB</strong></span>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES (8 Exclusive Services) -->
+<div class="svc-sec">
+  <div class="svc-head rv">
+    <div class="sec-eye" style="justify-content:center">Layanan Eksklusif</div>
+    <h2 class="sec-title dk">Ruang untuk <em>Setiap Momen</em></h2>
+  </div>
+  
+  <div class="svc-grid rv">
+    <!-- 1. Intimate Wedding -->
+    <div class="svc-card photo-card">
+      <img src="intim.png" class="card-img" alt="Wedding">
+      <div class="card-overlay">
+        <div class="svc-name">Intimate Wedding</div>
+        <div class="svc-sub">Pernikahan intim yang elegan</div>
+      </div>
+    </div>
+
+    <!-- 2. Pre Wedding Shoot -->
+    <div class="svc-card photo-card">
+      <img src="prewed.png" class="card-img" alt="Prewed">
+      <div class="card-overlay">
+        <div class="svc-name">Pre Wedding Shoot</div>
+        <div class="svc-sub">Latar industrial estetik unik</div>
+      </div>
+    </div>
+
+    <!-- 3. Meeting Package -->
+    <div class="svc-card photo-card">
+      <img src="meeting.png" class="card-img" alt="Meeting">
+      <div class="card-overlay">
+        <div class="svc-name">Meeting Package</div>
+        <div class="svc-sub">Fullday · Fullboard · Halfday</div>
+      </div>
+    </div>
+
+    <!-- 4. Birthday Package -->
+    <div class="svc-card photo-card">
+      <img src="birtday.png" class="card-img" alt="Birthday">
+      <div class="card-overlay">
+        <div class="svc-name">Birthday Package</div>
+        <div class="svc-sub">Ulang tahun tak terlupakan</div>
+      </div>
+    </div>
+
+    <!-- 5. Romantic Dinner -->
+    <div class="svc-card photo-card">
+      <img src="roman.png" class="card-img" alt="Romantic Dinner">
+      <div class="card-overlay">
+        <div class="svc-name">Romantic Dinner</div>
+        <div class="svc-sub">Suasana candlelight eksklusif</div>
+      </div>
+    </div>
+
+    <!-- 6. Bridal Shower -->
+    <div class="svc-card photo-card">
+      <img src="sower.png" class="card-img" alt="Bridal Shower">
+      <div class="card-overlay">
+        <div class="svc-name">Bridal Shower</div>
+        <div class="svc-sub">Rayakan bersama sahabat</div>
+      </div>
+    </div>
+
+    <!-- 7. Book Photoshoot -->
+    <div class="svc-card photo-card">
+      <img src="book.png" class="card-img" alt="Photoshoot">
+      <div class="card-overlay">
+        <div class="svc-name">Book Photoshoot</div>
+        <div class="svc-sub">Sesi foto editorial profesional</div>
+      </div>
+    </div>
+
+    <!-- 8. Live Music Night -->
+    <div class="svc-card photo-card">
+      <img src="live.png" class="card-img" alt="Live Music">
+      <div class="card-overlay">
+        <div class="svc-name">Live Music Night</div>
+        <div class="svc-sub">Musik langsung setiap malam</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="text-align:center;margin-top:2.5rem">
+    <a href="https://wa.me/6282324730862?text=Halo%20La-Maja%2C%20saya%20mau%20info%20paket%20event" target="_blank" class="btn-p" style="display:inline-flex">Tanya Info Paket →</a>
+  </div>
+</div>
+
+<!-- FEATURED -->
+<section id="feat">
+  <div class="feat-head rv">
+    <div class="sec-eye">Menu Unggulan</div>
+    <h2 class="sec-title dk">Tiga <em>Favorit</em> Pelanggan</h2>
+    <p style="color:var(--CS);font-size:.85rem;font-weight:300;margin-top:.3rem">Selalu habis paling duluan — wajib coba!</p>
+  </div>
+  <div class="feat-grid rv">
+    <div class="fc"><div class="fc-num">01</div><div class="fc-iw"><img class="fc-img" src="unggul1.jpeg" alt="Beef Saikoro"><div class="fc-ov"></div></div><div class="fc-info"><span class="fc-badge">🌟 New Menu</span><div class="fc-name">Nasi Campur</div><div class="fc-desc"> Nasi yang di campur dengan oncom,gepuk sapi ,kangkung goreng,lotek,kulit goreng dan sate lilit.</div><div class="fc-price">Rp 58.000</div></div></div>
+    <div class="fc"><div class="fc-num">02</div><div class="fc-iw"><img class="fc-img" src="unggul2.jpeg" alt="La-Maja Coffee"><div class="fc-ov"></div></div><div class="fc-info"><span class="fc-badge">☕ Signature</span><div class="fc-name">La-Maja Variant Mojito</div><div class="fc-desc">LYCHEE MOJITO,STRAWBERRY MOJITO,MINT MOJITO,CARAMEL MOJITO</div><div class="fc-price">Rp 29.000</div></div></div>
+    <div class="fc"><div class="fc-num">03</div><div class="fc-iw"><img class="fc-img" src="unggul3.jpeg" alt="Nasi Campur"><div class="fc-ov"></div></div><div class="fc-info"><span class="fc-badge">🔥 Chef's Pick</span><div class="fc-name">Sirloin Steak</div><div class="fc-desc">Sirloin , salad choice ofpotato and sauce.</div><div class="fc-price">Rp 86.000</div></div></div>
+  </div>
+</section>
+
+<!-- FULL MENU -->
+<section id="menu">
+  <div class="menu-head rv">
+    <div class="sec-eye" style="justify-content:center">Daftar Lengkap</div>
+    <h2 class="sec-title dk">Menu <em>Là-Maja</em> 2026</h2>
+    <p class="menu-note">*Harga belum termasuk pajak dan service charge</p>
+  </div>
+  <div class="tabs rv" id="tabs">
+    <button class="tab on" onclick="setTab(this,'pnew')">New Menu</button>
+    <button class="tab" onclick="setTab(this,'psteak')">Steak & Grill</button>
+    <button class="tab" onclick="setTab(this,'ppasta')">Pasta</button>
+    <button class="tab" onclick="setTab(this,'pricenoodle')">Nasi & Mie</button>
+    <button class="tab" onclick="setTab(this,'psoup')">Sop Premium</button>
+    <button class="tab" onclick="setTab(this,'psnack')">Snack & Dessert</button>
+    <button class="tab" onclick="setTab(this,'pdimsum')">Dimsum</button>
+    <button class="tab" onclick="setTab(this,'pcake')">Cake</button>
+    <button class="tab" onclick="setTab(this,'pcoffee')">Coffee</button>
+    <button class="tab" onclick="setTab(this,'pnoncoffee')">Non Coffee</button>
+    <button class="tab" onclick="setTab(this,'pmojito')">Mojito & Moctail</button>
+    <button class="tab" onclick="setTab(this,'ptea')">Tea & Fresh</button>
+  </div>
+
+  <!-- NEW MENU -->
+  <div class="panel on rv" id="pnew">
+    <div class="panel-bg">
+      <div class="mgrid">
+        <div class="mi"><div class="mi-info"><div class="mi-name">Tha'i Chicken Basil & Mango Salad<span class="badge-n">New</span></div><div class="mi-desc">Ayam cincang bumbu pedas khas Thailand & daun basil</div></div><div class="mi-price">Rp 42.000</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Nasi Campur<span class="badge-n">New</span></div><div class="mi-desc">Oncom gepuk sapi, kangkung goreng, lotek, kulit goreng, sate lilit</div></div><div class="mi-price">Rp 58.000</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Beef Saikoro Sambal Matah<span class="badge-b">Best</span></div><div class="mi-desc">Saikoro beef, nasi, sambal matah segar, salad</div></div><div class="mi-price">Rp 57.000</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Beef Saikoro Black Paper</div><div class="mi-desc">Saikoro beef, nasi, blackpaper sauce, salad</div></div><div class="mi-price">Rp 57.000</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STEAK -->
+  <div class="panel rv" id="psteak">
+    <div class="panel-bg">
+      <div class="sec-div">Steak Premium</div>
+      <div class="mgrid">
+        <div class="mi"><div class="mi-info"><div class="mi-name">Sirloin Steak</div><div class="mi-desc">Sirloin, salad, pilihan potato & saus</div></div><div class="mi-price">Rp 86.000</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Meltique Tenderloin</div><div class="mi-desc">Meltique tenderloin, salad, pilihan potato & saus</div></div><div class="mi-price">Rp 86.000</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Meltique Sirloin</div><div class="mi-desc">Meltique sirloin, salad, pilihan potato & saus</div></div><div class="mi-price">Rp 84.000</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Chicken Steak<span class="badge-b">Best</span></div><div class="mi-desc">Chicken breast fillet, salad, french fries & saus</div></div><div class="mi-price">Rp 55.000</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Chicken Parmigiana</div><div class="mi-desc">Chicken fillet, mozzarella, potato wedges, salad, mushroom sauce</div></div><div class="mi-price">Rp 53.000</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Chicken Cordon Bleu</div><div class="mi-desc">Chicken fillet, smoked beef, mozzarella, mustard, french fries, salad</div></div><div class="mi-price">Rp 57.000</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Fish & Chips<span class="badge-b">Best</span></div><div class="mi-desc">Fillet dory, french fries/potato wedges, tartar sauce</div></div><div class="mi-price">Rp 43.000</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Chicken Katsu</div><div class="mi-desc">Rice, chicken katsu, sayuran, chili sauce</div></div><div class="mi-price">Rp 39.000</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Chicken Wings Ablasa / Salted Egg</div><div class="mi-desc">Wings ayam dengan salted egg ablasa sauce</div></div><div class="mi-price">Rp 33.000</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Beef Saikoro Sambal Matah</div><div class="mi-desc">Saikoro beef, nasi, sambal matah, salad</div></div><div class="mi-price">Rp 57.000</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Beef Saikoro Black Paper</div><div class="mi-desc">Saikoro beef, nasi, blackpaper sauce, salad</div></div><div class="mi-price">Rp 57.000</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Beef Teriyaki</div><div class="mi-desc">Nasi, beef slice, teriyaki sauce, sayuran, mayo</div></div><div class="mi-price">Rp 48.000</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Chicken Teriyaki</div><div class="mi-desc">Nasi, chicken slice, teriyaki sauce</div></div><div class="mi-price">Rp 48.000</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Dory Pineapple Sauce</div><div class="mi-desc">Nasi, stir-fried dory, pineapple sauce, sayuran</div></div><div class="mi-price">Rp 45.000</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Butter Rice Chicken</div><div class="mi-desc">Butter rice, chicken topping, sayuran</div></div><div class="mi-price">Rp 38.000</div></div>
+      </div>
+      <p class="menu-note-small">Pilihan Potato: French fries · Wedges · Mashed potato &nbsp;|&nbsp; Pilihan Saus: Mushroom · Barbeque · Blackpaper</p>
+    </div>
+  </div>
+
+  <!-- PASTA -->
+  <div class="panel rv" id="ppasta">
+    <div class="panel-bg">
+      <div class="mgrid">
+        <div class="mi"><div class="mi-info"><div class="mi-name">Spaghetti Aglio Olio</div><div class="mi-desc">Tuna/chicken chunk, chili flake, garlic oil, garlic bread</div></div><div class="mi-price">Rp 42.000</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Spaghetti Carbonara<span class="badge-b">Best</span></div><div class="mi-desc">Carbonara sauce, parmesan cheese, garlic bread</div></div><div class="mi-price">Rp 45.000</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Spaghetti Tuna Sambal Matah</div><div class="mi-desc">Tuna chunk, sambal matah, garlic bread</div></div><div class="mi-price">Rp 43.000</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Spaghetti Bolognese</div><div class="mi-desc">Bolognese sauce, cheddar cheese, garlic bread</div></div><div class="mi-price">Rp 43.000</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NASI & MIE -->
+  <div class="panel rv" id="pricenoodle">
+    <div class="panel-bg">
+      <div class="mgrid">
+        <div class="mi"><div class="mi-info"><div class="mi-name">Fried Rice La-Maja<span class="badge-b">Best</span></div><div class="mi-desc">Nasi goreng, telur & sate ayam, mix sayuran, kerupuk udang</div></div><div class="mi-price">Rp 39.000</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Fried Rice Seafood</div><div class="mi-desc">Nasi goreng seafood, mix sayuran, kerupuk udang</div></div><div class="mi-price">Rp 42.000</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Fried Noodle La-Maja</div><div class="mi-desc">Mie goreng, chicken fillet, telur, sayuran</div></div><div class="mi-price">Rp 45.000</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Fried Noodle Seafood</div><div class="mi-desc">Mie goreng, shrimp, squid, dory, sayuran</div></div><div class="mi-price">Rp 45.000</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Kwetiau Goreng Seafood</div><div class="mi-desc">Kwetiau, shrimp, squid, dory, sayuran</div></div><div class="mi-price">Rp 45.000</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SOP -->
+  <div class="panel rv" id="psoup">
+    <div class="panel-bg">
+      <div class="mgrid">
+        <div class="mi"><div class="mi-info"><div class="mi-name">Buntut Goreng / Bakar</div><div class="mi-desc">Oxtail, kaldu, sambal, emping, nasi</div></div><div class="mi-price">Rp 76.000</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Sop Buntut</div><div class="mi-desc">Oxtail soup, sambal, emping, nasi</div></div><div class="mi-price">Rp 74.000</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Sop Iga Original</div><div class="mi-desc">Iga sapi, sambal, emping, nasi</div></div><div class="mi-price">Rp 74.000</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Sop Iga Garang Asam</div><div class="mi-desc">Iga sapi garang asam, sambal, emping, nasi</div></div><div class="mi-price">Rp 79.000</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Tom Yum with Rice</div><div class="mi-desc">Tom yum kuah seafood segar, nasi</div></div><div class="mi-price">Rp 57.000</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SNACK & DESSERT -->
+  <div class="panel rv" id="psnack">
+    <div class="panel-bg">
+      <div class="sec-div" style="background:rgba(196,112,79,.08)">Snack</div>
+      <div class="mgrid" style="margin-bottom:.6rem">
+        <div class="mi"><div class="mi-info"><div class="mi-name">Mix Plater<span class="badge-b">Best</span></div><div class="mi-desc">Potato wedges, onion rings, chicken finger, french fries, tartar sauce</div></div><div class="mi-price">Rp 48.000</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Quesadilas</div><div class="mi-desc">Chicken chunk, corn sauce, mozzarella</div></div><div class="mi-price">Rp 38.000</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Nacos</div><div class="mi-desc">Tortilla chips, salsa sauce, cheese sauce</div></div><div class="mi-price">Rp 33.000</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">French Fries & Sausage</div><div class="mi-desc">French fries, sausage, bbq/chili/tomato sauce</div></div><div class="mi-price">Rp 33.000</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Calamary</div><div class="mi-desc">Crispy calamari rings, tartar sauce, lemon</div></div><div class="mi-price">Rp 33.000</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Lasagna</div><div class="mi-desc">Classic beef lasagna baked</div></div><div class="mi-price">Rp 49.500</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Scrambel Egg</div><div class="mi-desc">Roti panggang & telur orak-arik lembut</div></div><div class="mi-price">Rp 22.000</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Cheese Chicken Meatballs</div><div class="mi-desc">Bola-bola ayam disiram keju leleh</div></div><div class="mi-price">Rp 58.000</div></div>
+      </div>
+      <div class="sec-div" style="background:rgba(196,112,79,.08)">Dessert</div>
+      <div class="mgrid">
+        <div class="mi"><div class="mi-info"><div class="mi-name">Peanut Banana & Honey Tortila</div><div class="mi-desc">Pisang madu & peanut dalam kulit tortila renyah</div></div><div class="mi-price">Rp 38.000</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Caramel Cheese Puding</div><div class="mi-desc">Puding keju dengan saus caramel</div></div><div class="mi-price">Rp 25.000</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Banana Split</div><div class="mi-desc">Pisang, ice cream, choco sauce</div></div><div class="mi-price">Rp 34.000</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Banana Flambe</div><div class="mi-desc">Flamed banana with caramel</div></div><div class="mi-price">Rp 36.000</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Colenak</div><div class="mi-desc">Tape, kelapa, ice cream, caramel</div></div><div class="mi-price">Rp 34.000</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DIMSUM -->
+  <div class="panel rv" id="pdimsum">
+    <div class="panel-bg">
+      <div class="mgrid">
+        <div class="mi"><div class="mi-info"><div class="mi-name">Bakso Kumis Naga</div><div class="mi-desc">Bakso unik khas Là-Maja</div></div><div class="mi-price">Rp 20.000</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Lumpia Kulit Tahu Udang</div><div class="mi-desc">Lumpia crispy isian udang</div></div><div class="mi-price">Rp 20.000</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Siomay Mozarela</div><div class="mi-desc">Siomay dengan mozzarella leleh</div></div><div class="mi-price">Rp 20.000</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Siomay Udang</div><div class="mi-desc">Siomay segar isian udang</div></div><div class="mi-price">Rp 20.000</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Siomay Kepiting</div><div class="mi-desc">Siomay premium isian kepiting</div></div><div class="mi-price">Rp 20.000</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Lumpia Udang</div><div class="mi-desc">Lumpia goreng crispy isian udang</div></div><div class="mi-price">Rp 20.000</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Pangsit Udang Goreng</div><div class="mi-desc">Pangsit goreng renyah isian udang</div></div><div class="mi-price">Rp 20.000</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CAKE -->
+  <div class="panel rv" id="pcake">
+    <div class="panel-bg">
+      <div class="mgrid">
+        <div class="mi"><div class="mi-info"><div class="mi-name">Red Velvet Cake</div><div class="mi-desc">Classic red velvet with cream cheese frosting</div></div><div class="mi-price">Rp 35.500</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Black Forest Cake</div><div class="mi-desc">Rich chocolate, cream, cherries</div></div><div class="mi-price">Rp 35.500</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- COFFEE -->
+  <div class="panel rv" id="pcoffee">
+    <div class="panel-bg">
+      <div class="sec-div">Signature Coffee</div>
+      <div class="mgrid" style="margin-bottom:.6rem">
+        <div class="mi"><div class="mi-info"><div class="mi-name">La-Maja Coffee<span class="badge-b">Best</span></div><div class="mi-desc">Kopi signature — ice only</div></div><div class="mi-price">Rp 29.000</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Creambrulle Coffee</div><div class="mi-desc">Hot & Ice tersedia</div></div><div class="mi-price">Rp 31.000</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Brown Sugar Coffee</div><div class="mi-desc">Ice only</div></div><div class="mi-price">Rp 29.000</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Vanila Coffee</div><div class="mi-desc">Hot 27K / Ice 29K</div></div><div class="mi-price">Rp 27.000+</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Caramel Coffee</div><div class="mi-desc">Hot 27K / Ice 29K</div></div><div class="mi-price">Rp 27.000+</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Strawberry Coffee</div><div class="mi-desc">Hot 27K / Ice 29K</div></div><div class="mi-price">Rp 27.000+</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Lemon Coffee</div><div class="mi-desc">Ice only</div></div><div class="mi-price">Rp 29.000</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Pistachio Coffee</div><div class="mi-desc">Ice only</div></div><div class="mi-price">Rp 31.000</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Americano Orange Honey</div><div class="mi-desc">Ice only</div></div><div class="mi-price">Rp 29.000</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Americano Sour</div><div class="mi-desc">Ice only</div></div><div class="mi-price">Rp 29.000</div></div>
+      </div>
+      <div class="sec-div">Classic Coffee</div>
+      <div class="mgrid">
+        <div class="mi"><div class="mi-info"><div class="mi-name">Americano</div><div class="mi-desc">Hot 20K / Ice 22K</div></div><div class="mi-price">Rp 20.000+</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Cappucino</div><div class="mi-desc">Hot 23K / Ice 25K</div></div><div class="mi-price">Rp 23.000+</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Latte</div><div class="mi-desc">Hot 23K / Ice 25K</div></div><div class="mi-price">Rp 23.000+</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Mochaccino</div><div class="mi-desc">Hot 29K / Ice 31K</div></div><div class="mi-price">Rp 29.000+</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Affogato</div><div class="mi-desc">Espresso over vanilla ice cream</div></div><div class="mi-price">Rp 28.000</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NON COFFEE -->
+  <div class="panel rv" id="pnoncoffee">
+    <div class="panel-bg">
+      <div class="mgrid">
+        <div class="mi"><div class="mi-info"><div class="mi-name">Chocolate</div><div class="mi-desc">Hot 25K / Ice 27K</div></div><div class="mi-price">Rp 25.000+</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Klepon</div><div class="mi-desc">Hot 25K / Ice 27K — rasa nusantara</div></div><div class="mi-price">Rp 25.000+</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Matcha Latte<span class="badge-b">Best</span></div><div class="mi-desc">Hot 25K / Ice 27K — premium grade</div></div><div class="mi-price">Rp 25.000+</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Cookies & Cream</div><div class="mi-desc">Ice only</div></div><div class="mi-price">Rp 30.000</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Vanila Milkshake</div><div class="mi-desc">Creamy vanilla blend</div></div><div class="mi-price">Rp 30.000</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Strawberry Milkshake</div><div class="mi-desc">Fresh strawberry blend</div></div><div class="mi-price">Rp 30.000</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Choco Milkshake</div><div class="mi-desc">Rich chocolate blend</div></div><div class="mi-price">Rp 30.000</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Blueberry Smoothies</div><div class="mi-desc">Fresh blueberry blend</div></div><div class="mi-price">Rp 33.000</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Strawberry Smoothies</div><div class="mi-desc">Fresh strawberry blend</div></div><div class="mi-price">Rp 30.000</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Healthy Juice</div><div class="mi-desc">Mix sayuran & buah segar</div></div><div class="mi-price">Rp 32.000</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MOJITO & MOCTAIL -->
+  <div class="panel rv" id="pmojito">
+    <div class="panel-bg">
+      <div class="sec-div" style="background:rgba(92,122,88,.12)">Mojito Series</div>
+      <div class="mgrid" style="margin-bottom:.6rem">
+        <div class="mi"><div class="mi-info"><div class="mi-name">Lychee Mojito</div></div><div class="mi-price">Rp 28.000</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Strawberry Mojito</div></div><div class="mi-price">Rp 28.000</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Mint Mojito</div></div><div class="mi-price">Rp 28.000</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Caramel Mojito</div></div><div class="mi-price">Rp 29.000</div></div>
+      </div>
+      <div class="sec-div" style="background:rgba(92,122,88,.12)">Moctail Series</div>
+      <div class="mgrid">
+        <div class="mi"><div class="mi-info"><div class="mi-name">Summer Punch</div></div><div class="mi-price">Rp 27.000</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Sunrise</div></div><div class="mi-price">Rp 28.000</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Strawberry Blue</div></div><div class="mi-price">Rp 29.000</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Blue Sparkling</div></div><div class="mi-price">Rp 29.000</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Cucumber Lemonade</div></div><div class="mi-price">Rp 27.000</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Berry de Orange</div></div><div class="mi-price">Rp 29.000</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TEA -->
+  <div class="panel rv" id="ptea">
+    <div class="panel-bg">
+      <div class="sec-div" style="background:rgba(92,122,88,.12)">Tea Series</div>
+      <div class="mgrid" style="margin-bottom:.6rem">
+        <div class="mi"><div class="mi-info"><div class="mi-name">Tea</div><div class="mi-desc">Hot 10K / Ice 12K</div></div><div class="mi-price">Rp 10.000+</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Lychee Tea</div><div class="mi-desc">Hot 25K / Ice 27K</div></div><div class="mi-price">Rp 25.000+</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Lemon Grass Tea</div><div class="mi-desc">Hot 18K / Ice 20K</div></div><div class="mi-price">Rp 18.000+</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Lemon Tea</div><div class="mi-desc">Hot 18K / Ice 20K</div></div><div class="mi-price">Rp 18.000+</div></div>
+      </div>
+      <div class="sec-div" style="background:rgba(92,122,88,.12)">Add On</div>
+      <div class="mgrid">
+        <div class="mi"><div class="mi-info"><div class="mi-name">Ice Cream</div></div><div class="mi-price">Rp 5.000</div></div>
+        <div class="mi"><div class="mi-info"><div class="mi-name">Mineral Water 330ml / 600ml</div></div><div class="mi-price">Rp 7K / 10K</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gal">
+  <div class="gal-head rv">
+    <div class="sec-eye lt">Galeri</div>
+    <h2 class="sec-title lt">Suasana <em>Là-Maja</em></h2>
+    <p style="color:rgba(254,250,245,.35);font-size:.78rem;font-weight:300;margin-top:.3rem">Ganti foto-foto ini dengan foto asli cafe kamu di VSCode (ubah src setiap tag img)</p>
+  </div>
+  <div class="gal-track" id="galTrack">
+    <div class="gi" onclick="openLb('https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?w=1400&q=85')"><img src="sua1.jpeg" alt="Interior"><div class="gi-ov"><div class="gi-plus">+</div></div></div>
+    <div class="gi" onclick="openLb('https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1400&q=85')"><img src="sua2.jpeg" alt="Bar"><div class="gi-ov"><div class="gi-plus">+</div></div></div>
+    <div class="gi" onclick="openLb('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1400&q=85')"><img src="sua3.jpeg" alt="Kopi"><div class="gi-ov"><div class="gi-plus">+</div></div></div>
+    <div class="gi" onclick="openLb('https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?w=1400&q=85')"><img src="sua4.jpeg" alt="Dining"><div class="gi-ov"><div class="gi-plus">+</div></div></div>
+    <div class="gi" onclick="openLb('https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=1400&q=85')"><img src="sua5.jpeg" alt="Food"><div class="gi-ov"><div class="gi-plus">+</div></div></div>
+    <div class="gi" onclick="openLb('https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=1400&q=85')"><img src="sua6.jpeg" alt="Coffee"><div class="gi-ov"><div class="gi-plus">+</div></div></div>
+  </div>
+  <div class="gal-hint">Geser untuk melihat lebih banyak</div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lb" id="lb" onclick="closeLb()"><div class="lb-x">✕</div><img id="lbImg" src="" alt=""></div>
+
+<!-- REVIEWS -->
+<section id="rev">
+  <div class="rev-head rv">
+    <div class="sec-eye" style="justify-content:center">Kata Mereka</div>
+    <h2 class="sec-title dk">Review <em>Pelanggan</em></h2>
+  </div>
+  <div class="rev-rating rv">
+    <div class="rating-n" id="rNum">4.7</div>
+    <div class="rating-stars">★★★★★</div>
+    <div class="rating-meta">Berdasarkan ulasan Google Maps · Rating konsisten 4.7</div>
+  </div>
+  <div class="rev-track" id="revTrack">
+    <div class="rc"><div class="rc-q">"</div><div class="rc-stars">★★★★★</div><p class="rc-text">Tempatnya nyaman banget! Suasana industrial tapi tetap hangat. Kopinya enak, Chicken Steak juicy banget. Mushola ada, parkir luas. Pasti balik lagi!</p><div class="rc-auth"><div class="rc-av">DP</div><div><div class="rc-name">Dinda Putri</div><div class="rc-src"><span class="g-blue">Google</span> · 2 bulan lalu</div></div></div></div>
+    <div class="rc"><div class="rc-q">"</div><div class="rc-stars">★★★★★</div><p class="rc-text">La-Maja Coffee signature-nya ENAK BANGET. Balanced, ga terlalu manis, ga terlalu pahit. Design cafe-nya sangat aesthetic dan unik!</p><div class="rc-auth"><div class="rc-av">RA</div><div><div class="rc-name">Rizal Ardian</div><div class="rc-src"><span class="g-blue">Google</span> · 3 bulan lalu</div></div></div></div>
+    <div class="rc"><div class="rc-q">"</div><div class="rc-stars">★★★★★</div><p class="rc-text">5 menit dari Stasiun Cicalengka. Cocok buat nunggu kereta sambil ngopi. Pelayanan ramah & cepat, satu tempat yang super lengkap!</p><div class="rc-auth"><div class="rc-av">SN</div><div><div class="rc-name">Siti Nuraini</div><div class="rc-src"><span class="g-blue">Google</span> · 1 bulan lalu</div></div></div></div>
+    <div class="rc"><div class="rc-q">"</div><div class="rc-stars">★★★★★</div><p class="rc-text">WFC di sini nyaman parah — sinyal oke, colokan ada, tenang. Fish & Chips crispy! Sop Iga-nya enak banget. Recommended!</p><div class="rc-auth"><div class="rc-av">BH</div><div><div class="rc-name">Bagas Hendra</div><div class="rc-src"><span class="g-blue">Google</span> · 2 minggu lalu</div></div></div></div>
+    <div class="rc"><div class="rc-q">"</div><div class="rc-stars">★★★★★</div><p class="rc-text">Luas, ada baby chair, kids friendly! Nasi Campur barunya enak banget. Harga sesuai kualitas. 9/10!</p><div class="rc-auth"><div class="rc-av">MR</div><div><div class="rc-name">Mira Rahayu</div><div class="rc-src"><span class="g-blue">Google</span> · 1 bulan lalu</div></div></div></div>
+    <div class="rc"><div class="rc-q">"</div><div class="rc-stars">★★★★★</div><p class="rc-text">Beef Saikoro Sambal Matah TOP! Daging empuk, sambal matahnya segar. Dimsum-nya worth it cuma 20K. Interior beda dari cafe lain!</p><div class="rc-auth"><div class="rc-av">FA</div><div><div class="rc-name">Fajar Anugrah</div><div class="rc-src"><span class="g-blue">Google</span> · 3 minggu lalu</div></div></div></div>
+    <div class="rc"><div class="rc-q">"</div><div class="rc-stars">★★★★★</div><p class="rc-text">Intimate wedding di sini — tempatnya bisa di-custom, tim super helpful, makanan enak. Highly recommended!</p><div class="rc-auth"><div class="rc-av">AI</div><div><div class="rc-name">Anisa & Irfan</div><div class="rc-src"><span class="g-blue">Google</span> · 5 minggu lalu</div></div></div></div>
+  </div>
+  <div class="rev-hint">Geser untuk review lainnya</div>
+</section>
+
+<!-- LOCATION -->
+<section id="loc">
+  <div class="rvl">
+    <div class="sec-eye lt">Temukan Kami</div>
+    <h2 class="sec-title lt">Titik <em>Jumpa</em> Kita</h2>
+    <div style="height:2rem"></div>
+    <div class="ld"><div class="ld-ico">📍</div><div><div class="ld-lbl">Alamat</div><div class="ld-val">Jl. Cicalengka – Majalaya No. 121 Km. 2<br>Kabupaten Bandung, Jawa Barat</div></div></div>
+    <div class="ld"><div class="ld-ico">🕐</div><div><div class="ld-lbl">Jam Buka</div><div class="ld-val">Senin – Minggu · 09.00 – 22.00 WIB</div></div></div>
+    <div class="ld"><div class="ld-ico">📞</div><div><div class="ld-lbl">WhatsApp</div><div class="ld-val">+62 823-2473-0862</div></div></div>
+    <div class="ld"><div class="ld-ico">📸</div><div><div class="ld-lbl">Instagram & TikTok</div><div class="ld-val">@lamajacoffee</div></div></div>
+    <a href="https://maps.google.com/?q=La+Maja+Coffee+and+Eatery+Cicalengka+Bandung" target="_blank" class="dir-btn">Buka di Google Maps →</a>
+  </div>
+  <div class="rvr">
+    <div class="map-wrap">
+  <div class="map-tag">📍 LÀ-MAJA COFFEE & EATERY</div>
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.1437105710547!2d107.8236105!3d-6.9923494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68c5006226e059%3A0x5fe785e7931b67bb!2sLa-Maja%20Coffee%20%26%20Eatery!5e0!3m2!1sid!2sid!4v1778687154073!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="fg">
+    <div>
+      <div class="fl-logo">
+        <div class="fl-logo-img"><img src="data:image/jpeg;base64,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nzEXGAoOOFI2kZpTxOIdOFTle+qS1a7Wadr/AHabq5MqtTkjKz3/AK/r8TvJZYoYHmmkSONFLM7sFVQOpJPQVDZahYalbfaNOvbe7hzt8y3kWRc+mQetYF94fvL34bW2hxbLe4gjtwEMu9WMTKdpfachtnUqevIPSotM8O376drbXzz2t5qVv9m8x7pZ2ACMqudkaAEbz6kgDkcCt3ia3tIxUNGr/PXS/wB2/fyNXVnzJKOljoLXWNJvpmhstUsrmRSVKQzq7AjqMA9eDWNqEfhT4ieHte8I6nHDqWnyB9Pv7TzseYhAzyjbgOcZ4OQfSq1jo2ryeI9GvbrRtK06LTYJbcm2m3s4ZAo2DaNqZXoeefbm5Bo9+JPEdiyxQW+ou8sF5FJ86mSJUIKYGCpUnOeeKmGIrys+XS76NX92/XbXS7/UmNSo7O39W/DXQ8Xtf2ZvAt58HdX+Duh/EbXH8I3Wox6hNp0dxbXM9oyuGMaS7cqjOqkhgTkHB5bPp3ww8C/Dn4TeCJPB/gc2ttaWrtc3jSXSyzPIeGlnfOc/KBzgALgAAVa8MeG9TsdWtLjVI2T7BbG2hdLtHRgdoIVFiQhPlBwx4OOO9bWj6KlrodzYXtvbuLm5unlVQCJElldsNxySrAGqoV69WKbjbfe/lb8/w89HTnUkk2rbmt50P2gQebH5pXeI9w3Fc4zj0yRzT8H0Nch4Fs52s59VvJ1uWOLC0nH8drAzIjc93O5j68VsyeHNMl1Q6g5v/OMgk+W/nVMj/YD7ce2MVpRr1KtKNSMVr3fT7mXTqSnBSS3Naiiius2CiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAEVVRAiKFUDACjAApaKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP/9k=" alt="Logo"></div>
+        <span class="fl-t">Là-<i>Maja</i></span>
+      </div>
+      <p class="f-tag">Titik jumpa di Bandung Timur. Kopi artisan, suasana industrial yang hangat, dan momen yang tak terlupakan.</p>
+      <div class="f-soc">
+  <!-- INSTAGRAM -->
+  <a href="https://instagram.com/lamajacoffee" target="_blank" class="f-s">
+    <svg width="36" height="36" viewBox="0 0 36 36">
+      <defs>
+        <radialGradient id="ig-g" cx="30%" cy="107%" r="130%">
+          <stop offset="0%" stop-color="#fdf497"/><stop offset="5%" stop-color="#fdf497"/>
+          <stop offset="45%" stop-color="#fd5949"/><stop offset="60%" stop-color="#d6249f"/>
+          <stop offset="90%" stop-color="#285AEB"/>
+        </radialGradient>
+      </defs>
+      <rect width="36" height="36" rx="10" fill="url(#ig-g)"/>
+      <rect x="9" y="9" width="18" height="18" rx="5" fill="none" stroke="white" stroke-width="2"/>
+      <circle cx="18" cy="18" r="4.5" fill="none" stroke="white" stroke-width="2"/>
+      <circle cx="23.5" cy="12.5" r="1.2" fill="white"/>
+    </svg>
+  </a>
+
+  <!-- TIKTOK (Versi Bersih) -->
+  <a href="https://tiktok.com/@lamajacoffee" target="_blank" class="f-s">
+    <svg width="36" height="36" viewBox="0 0 36 36">
+      <rect width="36" height="36" rx="10" fill="#000000"/>
+      <path d="M23.5 10c-1.5 0-2.8.8-3.5 2V21.5c0 2-1.6 3.5-3.5 3.5s-3.5-1.6-3.5-3.5 1.6-3.5 3.5-3.5c.3 0 .6 0 .9.1V15c-.3 0-.6-.1-.9-.1-3.6 0-6.5 2.9-6.5 6.5s2.9 6.5 6.5 6.5 6.5-2.9 6.5-6.5V14.5c1.2.9 2.7 1.5 4.3 1.5V13c-1.8 0-3.3-1.3-3.8-3h-3.5z" fill="white"/>
+    </svg>
+  </a>
+
+  <!-- WHATSAPP -->
+  <a href="https://wa.me/6282324730862" target="_blank" class="f-s">
+    <svg width="36" height="36" viewBox="0 0 36 36">
+      <rect width="36" height="36" rx="10" fill="#25D366"/>
+      <path d="M18 8a10 10 0 0 0-8.5 15.3L8 28l4.8-1.3A10 10 0 1 0 18 8zm5.5 14.1c-.2.6-1.3 1.1-1.8 1.2-.5 0-1.1.1-3-.7-2.6-1.1-4.3-3.8-4.4-4-.1-.2-1-1.4-1-2.6s.7-1.9 1-2.2c.3-.3.6-.4.8-.4h.5c.2 0 .4 0 .6.5l.8 2c.1.3.1.5 0 .7l-.3.5c-.2.2-.3.3-.1.6.3.5 1 1.4 1.7 2 .8.7 1.4.9 1.7 1 .3.1.5.1.7-.2l.6-.8c.2-.3.4-.4.7-.3l2 1c.3.1.5.3.6.5 0 .2-.1.7-.3 1.3z" fill="white"/>
+    </svg>
+  </a>
+
+  <!-- GOOGLE MAPS (Google Style) -->
+  <a href="https://maps.app.goo.gl/gfXvG856hmQYLv4LA" target="_blank" class="f-s">
+    <svg width="36" height="36" viewBox="0 0 36 36">
+      <rect width="36" height="36" rx="10" fill="white"/>
+      <path d="M18 8c-3.3 0-6 2.7-6 6 0 4.5 6 11 6 11s6-6.5 6-11c0-3.3-2.7-6-6-6zm0 8.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z" fill="#EA4335"/>
+      <path d="M18 11.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5z" fill="#B31412" opacity="0.2"/>
+    </svg>
+  </a>
+</div>
+    </div>
+    <div>
+      <div class="f-col-t">Navigasi</div>
+      <ul class="f-links">
+        <li><a href="#about">Tentang Kami</a></li>
+        <li><a href="#feat">Menu Unggulan</a></li>
+        <li><a href="#menu">Daftar Menu</a></li>
+        <li><a href="#gal">Galeri</a></li>
+        <li><a href="#rev">Review</a></li>
+        <li><a href="#loc">Lokasi</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="f-col-t">Reservasi</div>
+      <ul class="f-links">
+        <li><a href="https://wa.me/6282324730862?text=Reservasi%20Meja" target="_blank">Reservasi Meja</a></li>
+        <li><a href="https://wa.me/6282324730862?text=Info%20Intimate%20Wedding" target="_blank">Intimate Wedding</a></li>
+        <li><a href="https://wa.me/6282324730862?text=Info%20Pre%20Wedding" target="_blank">Pre Wedding Shoot</a></li>
+        <li><a href="https://wa.me/6282324730862?text=Info%20Birthday%20Package" target="_blank">Birthday Package</a></li>
+        <li><a href="https://wa.me/6282324730862?text=Info%20Meeting%20Room" target="_blank">Meeting Room</a></li>
+        <li><a href="https://wa.me/6282324730862?text=Info%20Bridal%20Shower" target="_blank">Bridal Shower</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="f-bot">
+    <span>© 2025 Là-Maja Coffee & Eatery. All rights reserved.</span>
+    <span class="f-hash">#berjumpaatlamaja</span>
+  </div>
+</footer>
+
+<!-- FLOATING WA -->
+<div class="wa">
+  <div class="wa-tip">WhatsApp Reservasi</div>
+  <a href="https://wa.me/6282324730862?text=Halo%20La-Maja%2C%20saya%20ingin%20reservasi" target="_blank" class="wa-btn">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
